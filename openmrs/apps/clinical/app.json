@@ -56,6 +56,8 @@
         		"preferredIdentifier": "Id_Number"
     	},
         "obsIgnoreList": [
+            
+	    "Swasthya Employee"
             "REGISTRATION FEES",
             "COMMENTS",
             "Patient file"
@@ -80,6 +82,10 @@
                 "durationRequired": false,
                 "allowAddMore": true
             },
+            "Tuberculosis, Adverse Effects" :{
+                "multiSelect" : true,
+                "autocomplete" : true
+            },
             "Posture": {
                 "buttonSelect": true
             },
@@ -97,6 +103,9 @@
             },
             "Examination Notes": {
                 "conciseText": true
+            },
+            "Tuberculosis Intake Template": {
+                "computeDrugs": true
             },
             "Set1": {
                 "allowAddMore": true
