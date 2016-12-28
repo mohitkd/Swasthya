@@ -88,6 +88,11 @@
                 "showDetailsButton":true,
                 "displayOrder":5
             },
+            "programs":{  
+                "translationKey":"DASHBOARD_TITLE_PROGRAMS_KEY",
+                "type":"programs",
+                "displayOrder":6
+            },
             "radiologyOrders":{  
                 "orderType":"Radiology Order",
                 "type":"ordersControl",
@@ -171,8 +176,8 @@
                     "conceptNames":[  
                         "HEIGHT",
                         "Weight",
-                        "BMI Data",
-                        "BMI Status Data"
+                        "BMI",
+                        "BMI STATUS"
                     ],
                     "showDetailsButton":true,
                     "numberOfVisits":2
@@ -191,25 +196,6 @@
 
                     }
                 }
-            },
-            "nextFollowUpDate":{
-                 "translationKey":"DASHBOARD_TITLE_NEXT_FOLLOWUP_VISIT_KEY",
-                 "type":"Next FollowUp Date",
-                 "allowFutureDates":true,
-                 "isObservation":true,
-                 "displayOrder":20,
-                 "dashboardConfig":{
-                     "conceptNames":["Next FollowUp Date"]
-                 }
-            },
-            "dischargeSummary":{
-                 "translationKey":"DASHBOARD_TITLE_DISCHARGE_SUMMARY_KEY",
-                 "type":"dischargeSummary",
-                 "isObservation":true,
-                 "displayOrder":20,
-                 "dashboardConfig":{
-                     "conceptNames":["Discharge Summary"]
-                 }     
             },
             "vitals":{  
                 "translationKey":"DASHBOARD_TITLE_VITALS_KEY",
@@ -393,153 +379,6 @@
                 "showDetailsButton":true
             }
         }
-    },
-    "dischargeSummary":{
-        "translationKey":"DASHBOARD_TAB_DISCHARGE_KEY",
-        "maxRecentlyViewedPatients":10,
-        "sections":{  
-            "patientInformation":{  
-                "translationKey":"DASHBOARD_TITLE_PATIENT_INFORMATION_KEY",
-                "type":"patientInformation",
-                "patientAttributes":[  
-                    "caste",
-                    "class",
-                    "education",
-                    "occupation",
-                    "debt",
-                    "distanceFromCenter",
-                    "isUrban",
-                    "cluster",
-                    "RationCard",
-                    "familyIncome"
-                ],
-                "addressFields":[  
-                    "address1",
-                    "address2",
-                    "cityVillage",
-                    "countryDistrict"
-                ],
-                "displayOrder":0
-            },
-            "admissionDetails":{  
-                "translationKey":"DASHBOARD_TITLE_ADMISSION_DETAILS_KEY",
-                "type":"admissionDetails",
-                "displayOrder":1,
-                "showDetailsButton":true
-            },
-            "diagnosis":{  
-                "translationKey":"DASHBOARD_TITLE_DIAGNOSIS_KEY",
-                "type":"diagnosis",
-                "showCertainty":true,
-                "showOrder":true,
-                "showDetailsButton":true,
-                "displayOrder":2
-            },
-            "investigations":{  
-                "translationKey":"DASHBOARD_TITLE_INVESTIGATIONS_KEY",
-                "type":"labOrders",
-                "displayOrder":3,
-                "dashboardConfig":{  
-                    "title":null,
-                    "numberOfVisits":1,
-                    "showChart":false,
-                    "showTable":true,
-                    "showDetailsButton":false,
-                    "initialAccessionCount":0,
-                    "latestAccessionCount":1
-                },
-                "expandedViewConfig":{  
-                    "numberOfVisits":10
-                }
-            },
-            "AdmissionSymptoms":{  
-                "type":"historyAndExamination",
-                "isObservation":true,
-                "displayOrder":4,
-                "displayType":"Full-Page",
-                "dashboardConfig":{  
-                    "showGroupDateTime":false,
-                    "conceptNames":[  
-                        "Chief Complaint Data",
-                        "Examination Notes",
-                        "Smoking History",
-                        "Clief COmplaint Notes",
-                        "Blood Pressure"
-                    ]
-                },
-                "translationKey":"DASHBOARD_TITLE_ADMISSION_SYMPTOMS_KEY"
-            },
-            "ProcedureNotes":{
-               "translationKey":"DASHBOARD_TITLE_PROCEDURE_NOTES_KEY",
-                "type":"procedureNotes",
-                "isObservation":true,
-                "displayOrder":5,
-                "showDetailsButton":true,
-                "dashboardConfig":{  
-                    "conceptNames":[  
-                        "Procedure Notes"
-                    ]
-                }
-            },
-            "TreatmentGiven":{
-               "translationKey":"DASHBOARD_TITLE_TREATMENT_GIVEN_KEY",
-                "type":"TreatmentGiven",
-                "isObservation":true,
-                "displayOrder":6,
-                "showDetailsButton":true,
-                "dashboardConfig":{  
-                    "conceptNames":[  
-                        "Treatment Given"
-                    ]
-                }
-            },
-            "DischargeTreatment":{
-               "translationKey":"DASHBOARD_TITLE_DISCHARGE_TREATMENT_KEY",
-                "type":"DischargeTreatment",
-                "isObservation":true,
-                "displayOrder":7,
-                "showDetailsButton":true,
-                "dashboardConfig":{  
-                    "conceptNames":[  
-                        "Discharge Summary"
-                    ]
-                }
-            },
-            "deathCertificate":{
-                "translationKey":"DASHBOARD_TAB_DEATHCERTI_KEY",
-                "type":"deathCertificate",
-                "isObservation":true,
-                "displayOrder":21,
-                "showDetailsButton":true,
-                "dashboardConfig":{  
-                    "conceptNames":[  
-                          "Death Note"
-                      ]
-                }    
-            }
-
-         }   
-    },
-    "deathCertificate":{
-         "translationKey":"DASHBOARD_TAB_DEATHCERTI_KEY",
-         "displayByDefault":true,
-         "type":"deathCertificate",
-         "isObservation":true,
-         "sections":{ 
-            "deathCertificate":{
-                "translationKey":"DASHBOARD_TITLE_DEATHCERTI_KEY",
-                "displayType":"Full-Page",
-                "type":"deathCertificate",
-                "isObservation":true,
-                "showDetailsButton":true,
-                "dashboardConfig":{  
-                    "conceptNames":[  
-                          "Death Note"
-                      ]
-                }    
-            }
-          }
-           
     },
     "trends":{  
         "translationKey":"DASHBOARD_TAB_TRENDS_KEY",

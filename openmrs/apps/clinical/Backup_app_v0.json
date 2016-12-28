@@ -56,6 +56,8 @@
         		"preferredIdentifier": "Id_Number"
     	},
         "obsIgnoreList": [
+            
+	    "Swasthya Employee"
             "REGISTRATION FEES",
             "COMMENTS",
             "Patient file"
@@ -70,6 +72,9 @@
         "maxConceptSetLevels": 3,
         "allowOnlyCodedDiagnosis": false,
         "conceptSetUI": {
+            "All Observation Templates": {
+                "showPanelView": false
+            },
             "Chief Complaint Data": {
                 "autocomplete":true,
                 "codedConceptName":"Chief Complaint",
@@ -99,6 +104,9 @@
             "Examination Notes": {
                 "conciseText": true
             },
+            "Tuberculosis Intake Template": {
+                "computeDrugs": true
+            },
             "Set1": {
                 "allowAddMore": true
             },
@@ -114,10 +122,6 @@
             "Gynaecology, Gravida": {
                 "stepper": true
             },
-            "Next FollowUp Date":{
-                 "allowFutureDates":true
-             },
-
             "Accepted Family Planning methods": {
                 "multiSelect": true
             },
